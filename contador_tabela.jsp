@@ -4,13 +4,28 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Contador</title>
-<%@page import="java.util.*"%>
+<title>Contador Tabela</title>
 </head>
 <body>
-<table border="20"><tr>
-<%for(int i = 0; i < 6; i++){%>
-<%out.println("<td width=45px align=center>"+(int)(((Math.random())*60))+"</td>");}%>
-</tr></table>
+	<table border="1">
+	
+	<% for(int t = 0; t < 101; t++){ t--;%>
+		<tr>
+			<%for(int d = 0; d < 10; d++){%>
+			
+			<td>
+			
+			<% 
+			t++;
+			out.println(t);
+			%>
+			
+			
+			</td>
+			
+			<%}%>
+		</tr> <%} %>
+	</table>
+
 </body>
-</html>
+</html> 
